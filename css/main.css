@@ -3,8 +3,11 @@
 }
 .row{
     background-color: #8DD7E8;
-    padding-top: 35%;
+    margin-top: 3%;
+    padding-top: 13%;
+    padding-bottom: 5%;
     display: flex;
+
 }
 
 body{
