@@ -19,29 +19,74 @@
     <!-- Page Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <!--Import materialize.css
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <!-- To Do Functions -->
+    <script src="js/todo.js"></script>
 
-
+    <!--Navigation-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-brand">
             <img src="img/logo.png">
         </div>
     </nav>
-
 </head>
 <body>
+    <!--Main Image-->
     <div class="row">
         <object type="image/svg+xml" data="img/board.svg"
                 width="50%" height="50%" class="svg-content center-block">
         </object>
+        <div class="todo-footer">
+            <h1><span class="count-todos"></span></h1> <h1>new tasks.</h1>
+        </div>
+    </div>
+
+    <div class="container task-list">
+        <div class="row not-done">
+            <div class="todolist not-done">
+                <h2>Todos</h2>
+                <input type="text" class="form-control add-todo" placeholder="Add todo">
+                <button id="checkAll" class="btn btn-success">Mark all as done</button>
+
+                <hr>
+                <ul id="sortable" class="list-unstyled">
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Take out the trash</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Buy bread</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Teach penguins to fly</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="row done-tasks">
+                <div class="todolist">
+                    <h2>Already Done</h2>
+                    <ul id="done-items" class="list-unstyled">
+                        <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-<!--Import jQuery before materialize.js-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </body>
 </html>

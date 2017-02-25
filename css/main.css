@@ -6,8 +6,19 @@
     margin-top: 3%;
     padding-top: 13%;
     padding-bottom: 5%;
-    display: flex;
+}
 
+.row.not-done{
+    background-color: transparent;
+}
+
+.row.done-tasks{
+    background-color: transparent;
+}
+
+.container.task-list{
+    display: inline;
+    justify-content: center;
 }
 
 body{
@@ -20,4 +31,43 @@ h1{
     font-weight: 700;
     font-size: 35pt;
     color: #fafafa;
+}
+h2{
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35pt;
+    color: #4C4C4D;
+}
+
+.todolist{
+    background-color:#FFF;
+    padding:50px 50px 50px 50px;
+    margin-top:5px;
+}
+
+.todolist h2{
+    margin:0;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.form-control{
+    border-radius:0;
+}
+
+li.ui-state-default{
+    background:#fff;
+    border:none;
+    border-bottom:1px solid #ddd;
+}
+
+li.ui-state-default:last-child{
+    border-bottom:none;
+}
+
+.todo-footer{
+    text-align: center;
+    margin:0 0px 0px 0px;
+    padding: 10px 20px;
 }
