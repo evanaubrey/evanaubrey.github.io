@@ -41,7 +41,6 @@ function countTodos(){
     var count = $("#sortable li").length;
     $('.count-todos').html(count);
 }
-
 //create task
 function createTodo(text){
     var markup = '<li class="ui-state-default"><div class="checkbox"><label><input type="checkbox" value="" />'+ text +'</label></div></li>';
