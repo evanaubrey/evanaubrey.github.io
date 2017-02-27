@@ -10,10 +10,19 @@
 
 .row.not-done{
     background-color: transparent;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .row.done-tasks{
     background-color: transparent;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .container.task-list{
