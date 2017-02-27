@@ -86,8 +86,12 @@ li.ui-state-default:last-child{
     border-bottom:none;
 }
 
-.todo-footer{
+.todo-counter{
     text-align: center;
     margin:0 0px 0px 0px;
     padding: 10px 20px;
+}
+
+#checkAll{
+    justify-content: center;
 }

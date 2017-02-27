@@ -34,11 +34,11 @@
 <body>
     <!--Main Image-->
     <div class="row">
-        <object type="image/svg+xml" data="img/board.svg"
+        <object id="task-image" type="image/svg+xml" data="img/board.svg"
                 width="50%" height="50%" class="svg-content center-block">
         </object>
 
-        <div class="todo-footer">
+        <div class="todo-counter">
             <h1><span class="count-todos"></span> new tasks.</h1>
         </div>
         <div class="row not-done">
@@ -54,15 +54,17 @@
     </div>
 
     <div class="container task-list">
+        <div class="row done-tasks">
+            <div class="todo-counter">
+                <h1><span class="count-done"></span> completed tasks.</h1>
+            </div>
 
-            <div class="row done-tasks">
-                <div class="todolist">
-                    <h2>Already Done</h2>
-                    <ul id="done-items" class="list-unstyled"></ul>
-                </div>
+            <div class="todolist">
+                <ul id="done-items" class="list-unstyled"></ul>
             </div>
         </div>
     </div>
+
     <script type="text/javascript" src="js/todo.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@ $("#sortable").sortable();
 $("#sortable").disableSelection();
 
 countTodos();
+countDone();
 
 // all done btn
 $("#checkAll").click(function(){
@@ -36,11 +37,12 @@ $('.todolist').on('click','.remove-item',function(){
     removeItem(this);
 });
 
-// count tasks
+// count new tasks
 function countTodos(){
     var count = $("#sortable li").length;
     $('.count-todos').html(count);
 }
+
 //create task
 function createTodo(text){
     var markup = '<li class="ui-state-default"><div class="checkbox"><label><input type="checkbox" value="" />'+ text +'</label></div></li>';
@@ -72,6 +74,12 @@ function AllDone(){
     // myArray
     $('#sortable li').remove();
     countTodos();
+}
+
+// count completed tasks
+function countDone(){
+    var count = $("#done-items li").length;
+    $('.count-done').html(count);
 }
 
 //remove done task from list
