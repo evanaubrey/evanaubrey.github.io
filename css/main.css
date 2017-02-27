@@ -1,11 +1,22 @@
+/* Navbar */
 .navbar-inverse{
     background:#fafafa !important;
 }
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
 .row{
     background-color: #8DD7E8;
-    margin-top: 3%;
-    padding-top: 13%;
+    padding-top: 10%;
     padding-bottom: 5%;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .row.not-done{

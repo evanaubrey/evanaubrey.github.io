@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>ToDo</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- TypeKit Fonts -->
     <script src="https://use.typekit.net/dsd3ewf.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -25,7 +27,7 @@
     <!--Navigation-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-brand">
-            <img src="img/logo.png">
+            <img src="img/logo@2x.png">
         </div>
     </nav>
 </head>
@@ -37,13 +39,12 @@
         </object>
 
         <div class="todo-footer">
-            <h1><span class="count-todos"></span></h1> <h1>new tasks.</h1>
+            <h1><span class="count-todos"></span> new tasks.</h1>
         </div>
         <div class="row not-done">
             <div class="todolist not-done">
                 <input type="text" class="form-control add-todo" placeholder="Add todo">
                 <button id="checkAll" class="btn btn-success">Mark all as done</button>
-
                 <hr>
                 <ul id="sortable" class="list-unstyled"></ul>
             </div>
