@@ -39,7 +39,7 @@
     padding-right: 5%;
 }
 
-.container.task-list{
+.task-list{
     display: inline;
     justify-content: center;
 }
@@ -60,7 +60,7 @@ h2{
     font-style: normal;
     font-weight: 700;
     font-size: 35pt;
-    color: #4C4C4D;
+    color: #fafafa;
 }
 
 .todolist{
@@ -97,8 +97,3 @@ li.ui-state-default:last-child{
     margin:0 0px 0px 0px;
     padding: 10px 20px;
 }
-
-#checkAll{
-    
-}
-

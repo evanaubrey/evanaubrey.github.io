@@ -58,24 +58,6 @@ function done(doneItem){
     $('.remove').remove();
 }
 
-//mark all tasks as done
-function AllDone(){
-    var myArray = [];
-
-    $('#sortable li').each( function() {
-        myArray.push($(this).text());
-    });
-
-    // add to done
-    for (i = 0; i < myArray.length; i++) {
-        $('#done-items').append('<li>' + myArray[i] + '<button class="btn btn-default btn-xs pull-right  remove-item"><span class="glyphicon glyphicon-remove"></span></button></li>');
-    }
-
-    // myArray
-    $('#sortable li').remove();
-    countTodos();
-}
-
 // count completed tasks
 function countDone(){
     var count = $("#done-items li").length;
