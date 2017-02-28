@@ -1,6 +1,8 @@
 /* Navbar */
 .navbar-inverse{
     background:#fafafa !important;
+    border-color: transparent;
+    height: 10%;
 }
 .navbar-brand {
     padding: 0px;
@@ -8,12 +10,13 @@
 .navbar-brand>img {
     height: 100%;
     padding: 5px;
+    margin-top: 10px;
     width: auto;
 }
 
 .row{
     background-color: #8DD7E8;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 5%;
     margin-right: 0px;
     margin-left: 0px;
@@ -96,5 +99,5 @@ li.ui-state-default:last-child{
 }
 
 #checkAll{
-    justify-content: center;
+    
 }
