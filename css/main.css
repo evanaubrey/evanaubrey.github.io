@@ -7,7 +7,7 @@
 }
 .navbar-brand>img {
     height: 100%;
-    padding: 15px;
+    padding: 5px;
     width: auto;
 }
 
@@ -64,6 +64,9 @@ h2{
     background-color:#FFF;
     padding:50px 50px 50px 50px;
     margin-top:5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
 }
 
 .todolist h2{
