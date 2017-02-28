@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-
     <!-- Bootstrap Resources -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -24,20 +23,23 @@
     <!-- Page Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <!--Navigation-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-brand">
-            <img src="img/logo-mark.svg">
-        </div>
-    </nav>
 </head>
+
 <body>
+
+<!--Navigation-->
+<nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-brand">
+        <img src="img/logo-mark.svg">
+    </div>
+</nav>
     <!--Main Image-->
     <div class="row">
         <object id="task-image" type="image/svg+xml" data="img/board.svg"
                 width="50%" height="50%" class="svg-content center-block">
         </object>
 
+        <!-- To Do List -->
         <div class="todo-counter">
             <h1><span class="count-todos"></span> new tasks.</h1>
         </div>
@@ -53,6 +55,7 @@
         </div>
     </div>
 
+    <!-- Completed List -->
     <div class="container task-list">
         <div class="row done-tasks">
             <div class="todo-counter">
@@ -65,6 +68,7 @@
         </div>
     </div>
 
+    <!--To Do Script -->
     <script type="text/javascript" src="js/todo.js"></script>
 </body>
 </html>
